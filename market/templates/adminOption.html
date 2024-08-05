@@ -1,0 +1,48 @@
+{% extends 'base.html' %} {% block title %} Admin Roles {% endblock %} {% block
+content %}
+<div class="d-flex justify-content-center align-items-center min-vh-100">
+  <div style="max-width: 30%">
+    <form method="POST" action="">
+      <h1 class="text-center">Please Choose your role</h1>
+      <div style="margin-left: 70px">
+        <div class="form-group" style="padding-top: 10px">
+          <a class="btn btn-lg btn-outline-info" href="/adminOrder/{{admin_id}}"
+            >View Orders</a
+          >
+        </div>
+
+        <div class="form-group" style="padding-top: 10px">
+          <a
+            class="btn btn-lg btn-outline-info"
+            href="/adminDelivery_boy/{{admin_id}}"
+            >Add Delivery Boy</a
+          >
+        </div>
+
+        <div class="form-group" style="padding-top: 10px">
+          <a class="btn btn-lg btn-outline-info" href="/adminOffer/{{admin_id}}"
+            >Add New Offers</a
+          >
+        </div>
+
+        <div class="form-group" style="padding-top: 10px">
+          <a
+            class="btn btn-lg btn-outline-info"
+            href="/adminProduct/{{admin_id}}"
+            >Add New Product</a
+          >
+        </div>
+
+        <div class="form-group" style="padding-top: 10px">
+          <a
+            class="btn btn-lg btn-outline-info"
+            href="/adminSeller/{{admin_id}}"
+            >Add Seller</a
+          >
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+{% endblock %}

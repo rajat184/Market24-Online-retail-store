@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% block title %}
+  Order Details
+{% endblock %}
+
+{% block content %}
+<div class ="d-flex justify-content-center align-items-center min-vh-100" >
+<div>
+<form method ="POST" action="">
+  <h1 class="text-center">
+    Your total amount is : RS <span style="color: red;">{{total_val}}</span>
+    <span></span>
+  </h1>
+  <h1 class="text-center">
+    Enter Your Order Details
+  </h1>
+  <div style="width: 50rem;">
+
+    <div class="form-row" style="max-width: 100%;">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="House Number" name="HNO">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="City" name="City">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="State" name="State">
+          </div>
+
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Pincode" name="Pincode">
+        </div>
+    </div>
+  </div>
+
+    <div class="form-group" style="margin-top: 5px;">
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Payment Mode" name="Mode">
+      </div>
+  <div class="text-center">
+    <button type="submit" class="btn btn-primary">Place Order</button>
+  </div>
+  </form>
+</div>
+</div>
+
+
+
+
+
+
+{% endblock %}
