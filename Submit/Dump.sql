@@ -37,7 +37,7 @@ CREATE TABLE `admin` (
 
 LOCK TABLES `admin` WRITE;
 /*!40000 ALTER TABLE `admin` DISABLE KEYS */;
-INSERT INTO `admin` VALUES (1,'Anshak','Goel','akgoel@283'),(2,'Deeptorshi','Mondal','deepto@294'),(3,'Pritish','Poswal','pritishposwal@321'),(4,'Vibhor','Agarwal','vibhorag@349');
+INSERT INTO `admin` VALUES (1,'Rajat','Jaiswal','rajat@283'),(2,'Abhishek','kumar','abhishek@294'),(3,'raj','pratap','raj@321'),(4,'Arnav','gupta','arnav@349');
 /*!40000 ALTER TABLE `admin` ENABLE KEYS */;
 UNLOCK TABLES;
 
